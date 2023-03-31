@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+  <control namespace="SampleNamespace" constructor="PAGridCustomizer" version="0.1.2" display-name-key="PAGridCustomizer" description-key="PAGridCustomizer description" control-type="virtual">
+    <external-service-usage enabled="false">    
+    </external-service-usage>
+    <property name="EventName" display-name-key="EventName" description-key="EventName" of-type="SingleLine.Text" usage="bound" required="true" />
+    <resources>
+      <code path="index.ts" order="1" />
+      <platform-library name="React" version="16.8.6" />
+      <platform-library name="Fluent" version="8.29.0" />
+    <!--<css path="css/PAGCalculatedColumns.css" order="1" />-->
+          <!-- UNCOMMENT TO ADD MORE RESOURCES
+      <css path="css/DragRows.css" order="1" />
+      <resx path="strings/DragRows.1033.resx" version="1.0.0" />
+    
+      <js path="js/MyDragReceiver.js" order="1"/>
+            -->
+            
+    </resources>
+    <feature-usage>
+      <uses-feature name="WebAPI" required="true" />
+      <uses-feature name="Utility" required="true" />
+    </feature-usage>
+  </control>
+</manifest>
